@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>HomeWork6</title>
+  </head>
+ 
+  <body>
+    <container class="global-content">
+      <div class="top center" id="top">
+        <h1 class="header">
+          Добро пожаловать<br />
+          на мой сайт!
+        </h1>
+        <p class="header__text">
+          Вам предстоит пройти несколько увлекательных игр. Если готов - нажимай
+          <b>поехали</b> и <b>приступай</b>
+        </p>
+        <button class="header__button" onclick="location.href='#game-menu';">
+          Поехали!
+        </button>
+      </div>
+
+      <div class="game-menu center" id="game-menu">
+        <a href="#game1" class="game-menu__item">
+          <p class="game-menu__text">Игра 1</p>
+        </a>
+        <a href="#game2" class="game-menu__item">
+          <p class="game-menu__text">Игра 2</p>
+        </a>
+        <a href="#game3" class="game-menu__item">
+          <p class="game-menu__text">Игра 3</p>
+        </a>
+      </div>
+
+      <section class="game-box">
+        <div class="game" id="game1">
+          <div class="game-content">
+            <p class="game-content__title">Времена года</p>
+            <p class="game-content__text">
+              Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы
+              узнаете, к какому времени года он относится
+            </p>
+            <button class="game-content__button" onclick="playGameSeasons();">
+              Играть!
+            </button>
+          </div>
+          <a class="game-img" onclick="playGameSeasons();"> </a>
+        </div>
+
+        <div class="game" id="game2">
+          <div class="game-content">
+            <p class="game-content__title">Запомни слова</p>
+            <p class="game-content__text">
+              При нажатии на кнопку играть, вы увидите несколько слов, которые
+              вам необходимо запомнить.
+            </p>
+            <button class="game-content__button" onclick="playGameSeasons2();">Играть!</button>
+          </div>
+          <a href="#" class="game-img" ></a>
+        </div>
+
+        <div class="game" id="game3">
+          <div class="game-content">
+            <p class="game-content__title">Игра в загадки</p>
+            <p class="game-content__text">
+              Компьютер загадывает загадку, вам необходимо ее угадать, если вы
+              дадите не правильный ответ, то компьютер даст вам подсказку. У вас
+              будет три попытки и две подсказки.
+            </p>
+            <button class="game-content__button">Играть!</button>
+          </div>
+        </div>
+      </section>
+    </container>
+
+    <footer class="footer">
+      <p class="footer-text">Все права защищены</p>
+    </footer>
+    
+    <script src="./src/index.js"></script>
+
+  </body>
+</html>
