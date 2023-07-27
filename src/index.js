@@ -47,6 +47,7 @@ function playGameSeasons() {
   } while (repeatGame);
 }
 
+
 function playGameSeasons2() {
   let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 words = words.sort(() => Math.random() - 0.5);
